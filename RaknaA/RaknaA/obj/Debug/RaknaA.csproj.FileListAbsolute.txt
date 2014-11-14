@@ -4,3 +4,6 @@ c:\users\johanna\documents\visual studio 2013\Projects\RaknaA\RaknaA\bin\Debug\R
 c:\users\johanna\documents\visual studio 2013\Projects\RaknaA\RaknaA\bin\Debug\RaknaA.pdb
 c:\users\johanna\documents\visual studio 2013\Projects\RaknaA\RaknaA\obj\Debug\RaknaA.exe
 c:\users\johanna\documents\visual studio 2013\Projects\RaknaA\RaknaA\obj\Debug\RaknaA.pdb
+C:\Users\Johanna\Documents\GitHub\1DV404_HT14_E4_js233kz\RaknaA\RaknaA\bin\Debug\RaknaA.exe.config
+C:\Users\Johanna\Documents\GitHub\1DV404_HT14_E4_js233kz\RaknaA\RaknaA\obj\Debug\RaknaA.exe
+C:\Users\Johanna\Documents\GitHub\1DV404_HT14_E4_js233kz\RaknaA\RaknaA\obj\Debug\RaknaA.pdb
