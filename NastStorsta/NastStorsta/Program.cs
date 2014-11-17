@@ -32,8 +32,7 @@ namespace NastStorsta
                 {
                     secondLargest = currentNumber;
                 }
-                
-            }
+             }
             Console.WriteLine("Det näststörsta talet är: " + secondLargest);   
           
         }
