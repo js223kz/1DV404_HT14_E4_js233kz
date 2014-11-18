@@ -14,6 +14,7 @@ namespace NastStorsta
             string userInput = "";           
             Console.Write("Mata in 10 heltal: ");
             userInput = Console.ReadLine();
+            
             int maxValue = 0;
             int currentNumber = 0;
             int secondLargest = 0;
