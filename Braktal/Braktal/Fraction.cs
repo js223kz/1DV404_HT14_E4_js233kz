@@ -20,7 +20,7 @@ namespace Braktal
            {
                if (value == 0)
                {
-                   throw new ArgumentException("Nämnaren kan inte vara 0");
+                   throw new ArgumentException("Täljaren kan inte vara 0");
                }
                _numerator = value;
            }
@@ -34,16 +34,20 @@ namespace Braktal
            }
            set
            {
+               if (value == 0)
+               {
+                   throw new ArgumentException("Nämnaren kan inte vara 0");
+               }
                _denominator = value;
            }
        }
 
-       public Fraction(int denominator, int numerator){
+       public Fraction(int numerator, int denominator){
            Numerator = numerator;
            Denominator = denominator;
        }
 
-        public bool isNegative(int denominator, int numerator)
+        public bool isNegative(int numerator, int denominator)
        {
            Denominator = denominator;
            Numerator = numerator;
@@ -59,17 +63,40 @@ namespace Braktal
            }
        }
 
-        public double isEqualTo(int denominator, int numerator)
+        public bool isEqualTo(Fraction firstObject, Fraction secondObject)
         {
-            Denominator = denominator;
-            Numerator = numerator;
-            double result = (double)Denominator / (double)Numerator;
-            return result;   
+            double firstResult = (double)firstObject.Numerator / firstObject.Denominator;
+            double secondResult = (double)secondObject.Denominator / secondObject.Denominator;
+            if (firstResult == secondResult)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+             
+        }
+
+        public string Add(Fraction firstObject, Fraction secondObject)
+        {
+            int numeratorResult = firstObject.Numerator + secondObject.Numerator;
+            int denominatorResult = firstObject.Denominator + secondObject.Denominator;
+            string stringResult = String.Format("{0}{1}{2}{3}", "Det nya bråktalet blir: ", numeratorResult, "/", denominatorResult);
+            return stringResult;
+        }
+
+        public string Multiply(Fraction firstObject, Fraction secondObject)
+        {
+            int numeratorResult = firstObject.Numerator * secondObject.Numerator;
+            int denominatorResult = firstObject.Denominator * secondObject.Denominator;
+            string stringResult = String.Format("{0}{1}{2}{3}", "Det nya bråktalet blir: ", numeratorResult, "/", denominatorResult);
+            return stringResult;
         }
 
         public override string ToString()
         {
-            double result = Denominator / Numerator;
+            double result = Numerator / Denominator;
             string stringResult = String.Format("{0}{1}", "Resultatet av bråktalet är: ", result);
 
             return stringResult;
