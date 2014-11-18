@@ -21,7 +21,7 @@ namespace Braktal
                 WriteHeadline("Testar konstruktorn\n");
                 Console.WriteLine("{0}{1}{2}{3}", "Täljaren är: ", numerator, "\nNämnaren är: ", denominator);
 
-                //Testing ToString method
+                //Testing ToString method that prints result of fraction
                 WriteHeadline("\nTestar ToString\n");
                 Console.WriteLine("{0}{1}{2}{3}", "Täljaren är: ", numerator, "\nNämnaren är: ", denominator);
                 Console.WriteLine(firstFraction.ToString());
@@ -68,8 +68,7 @@ namespace Braktal
             }
         }
 
-      
-        static public void WriteHeadline(string headLine)
+      static public void WriteHeadline(string headLine)
         {
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.ForegroundColor = ConsoleColor.White;
