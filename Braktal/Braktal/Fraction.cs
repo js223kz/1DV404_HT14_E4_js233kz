@@ -81,7 +81,17 @@ namespace Braktal
         public string Add(Fraction firstObject, Fraction secondObject)
         {
             int numeratorResult = firstObject.Numerator + secondObject.Numerator;
-            int denominatorResult = firstObject.Denominator + secondObject.Denominator;
+            int denominatorResult = 0;
+
+            if (firstObject.Denominator == secondObject.Denominator)
+            {
+                denominatorResult = firstObject.Denominator;
+            }
+            else
+            {
+                denominatorResult = firstObject.Denominator * secondObject.Denominator;
+            }
+
             string stringResult = String.Format("{0}{1}{2}{3}", "Det nya bråktalet blir: ", numeratorResult, "/", denominatorResult);
             return stringResult;
         }
