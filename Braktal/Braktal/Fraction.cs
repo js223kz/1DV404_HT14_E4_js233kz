@@ -10,7 +10,6 @@ namespace Braktal
     {
        private int _numerator;
        private int _denominator;
-       //jw222hk@student.lnu.se och os222cq@student.lnu.se
        public int Numerator{
            get
            {
